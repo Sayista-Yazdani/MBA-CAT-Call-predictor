@@ -1,0 +1,138 @@
+/* Media Queries */
+/* Desktop  ≥ 992px */
+/* Tablet   768px – 991px */
+/* Mobile   ≤ 767px */
+/* Small    ≤ 480px */
+
+@media (min-width: 992px) {
+
+    /* Consultation – floating card */
+    .consultation-sticky {
+        right: 20px;
+        bottom: 100px;
+        width: 320px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(20px);
+    }
+
+    .consultation-sticky.visible {
+        /* top: 16%; */
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .consult-toggle-btn {
+        display: none;
+    }
+
+    .form-container {
+        margin-bottom: 300px;
+    }
+
+}
+
+
+@media (max-width: 991px) {
+
+    .navbar-collapse {
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+        border-radius: 10px;
+        margin-top: 1rem;
+    }
+
+    .nav-link {
+        margin: 0.5rem 0;
+    }
+
+    .hero-section {
+        min-height: 75vh;
+        padding: 40px 20px;
+    }
+
+    .form-container {
+        padding: 30px;
+    }
+
+    .consult-toggle-btn {
+        display: flex;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    /* Hero */
+    .hero-title {
+        font-size: 1.7rem;
+        letter-spacing: -2px;
+        margin-top: 30%;
+    }
+
+    /* Form */
+    .form-container {
+        padding: 18px;
+        border-radius: 14px;
+    }
+
+    .form-control,
+    .form-select {
+        padding: 10px 14px;
+        font-size: 0.9rem;
+    }
+
+    /* Consultation → Bottom Drawer */
+    .consultation-sticky {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        max-width: 100%;
+        transform: translateY(100%);
+        border-radius: 20px 20px 0 0;
+        transition: transform 0.35s ease;
+    }
+
+    .consultation-sticky.visible {
+        transform: translateY(1);
+    }
+
+    .consult-toggle-btn {
+        display: flex;
+    }
+
+    .btn-predict {
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .hero-title {
+        font-size: 1.5rem;
+        letter-spacing: -1px;
+    }
+
+    .navbar-logo-img {
+        width: 85px;
+    }
+
+    .phone-icon-circle {
+        width: 50px;
+        height: 50px;
+    }
+
+    .consult-text {
+        font-size: 1rem;
+    }
+
+    .footer-logo-img {
+        max-width: 120px;
+    }
+}
