@@ -1,28 +1,26 @@
-/* Media Queries */
-/* Desktop  ≥ 992px */
-/* Tablet   768px – 991px */
-/* Mobile   ≤ 767px */
-/* Small    ≤ 480px */
-
+/* =====================================================
+   DESKTOP ( ≥ 992px )
+===================================================== */
 @media (min-width: 992px) {
 
     /* Consultation – floating card */
     .consultation-sticky {
+        position: fixed;
         right: 20px;
         bottom: 100px;
         width: 320px;
         opacity: 0;
         visibility: hidden;
-        transform: translateY(20px);
+        /* transform: translateY(10px); */
     }
 
     .consultation-sticky.visible {
-        /* top: 16%; */
         opacity: 1;
         visibility: visible;
-        transform: translateY(80);
+        transform: translateY(80px);
     }
 
+    /* Hide mobile button */
     .consult-toggle-btn {
         display: none;
     }
@@ -30,11 +28,12 @@
     .form-container {
         margin-bottom: 300px;
     }
-
 }
 
-
-@media (max-width: 991px) {
+/* =====================================================
+   TABLET ( 768px – 991px )
+===================================================== */
+@media (max-width: 991px) and (min-width: 768px) {
 
     .navbar-collapse {
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
@@ -54,37 +53,18 @@
 
     .form-container {
         padding: 30px;
+        margin-bottom: 280px;
     }
 
+    /* Tablet behaves like desktop (no button) */
     .consult-toggle-btn {
-        display: flex;
+        display: none;
     }
 }
 
-   @media (min-width: 769px) {
-        .consultation-sticky {
-            right: 20px;
-            bottom: 100px;
-            width: 320px;
-            max-width: calc(100% - 40px);
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(20px);
-        }
-
-        .consultation-sticky.visible {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-
-        .form-container {
-            margin-bottom: 280px;
-        }
-
-
-    }
-
+/* =====================================================
+   MOBILE ( ≤ 767px )
+===================================================== */
 @media (max-width: 767px) {
 
     /* Hero */
@@ -98,6 +78,7 @@
     .form-container {
         padding: 18px;
         border-radius: 14px;
+        margin-bottom: 0;
     }
 
     .form-control,
@@ -108,7 +89,6 @@
 
     /* Consultation → Bottom Drawer */
     .consultation-sticky {
-        /* position: fixed; */
         bottom: 0;
         right: 0;
         width: 100%;
@@ -119,22 +99,24 @@
     }
 
     .consultation-sticky.visible {
-        transform: translateY(1);
+        transform: translateY(0);
     }
 
+    /* Show mobile button */
     .consult-toggle-btn {
         display: flex;
     }
 
     .btn-predict {
         width: 100%;
-        font-size: 0.8rem;
-        padding: 10px;
+        font-size: 0.9rem;
+        padding: 12px;
     }
-
 }
 
-
+/* =====================================================
+   SMALL MOBILE ( ≤ 480px )
+===================================================== */
 @media (max-width: 480px) {
 
     .hero-title {
