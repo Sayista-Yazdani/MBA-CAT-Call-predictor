@@ -61,6 +61,29 @@
     }
 }
 
+   @media (min-width: 769px) {
+        .consultation-sticky {
+            right: 20px;
+            bottom: 100px;
+            width: 320px;
+            max-width: calc(100% - 40px);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        .consultation-sticky.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .form-container {
+            margin-bottom: 280px;
+        }
+
+
+    }
 
 @media (max-width: 767px) {
 
