@@ -483,12 +483,9 @@
         position: fixed;
         right: 20px;
         bottom: 100px;
-        width: 320px;
+        width: 310px;
         max-width: calc(100% - 40px);
-        /* background: #ffffff; */
-        /* border-radius: 12px; */
-        /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); */
-        z-index: 999;
+        z-index: 9999;
         opacity: 0;
         visibility: hidden;
         transform: translateY(20px);
