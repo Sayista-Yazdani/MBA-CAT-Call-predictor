@@ -270,7 +270,7 @@
         font-family: "Chivo", sans-serif;
         color: #f3f3f3;
         font-size:4rem;
-        font-weight: 400;
+        font-weight: 600;
         letter-spacing: -2px;
         text-transform: uppercase;
         margin-top: 20px;
@@ -280,16 +280,7 @@
         animation: fadeInUp 0.8s ease-out;
     }
 
-    .hero-para {
-        font-size: 1.5rem;
-        margin-top: 15px;
-        color: #f3f3f3;
-        font-weight: 500;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        z-index: 2;
-        position: relative;
-        animation: fadeInUp 1s ease-out;
-    }
+
 
 
 
